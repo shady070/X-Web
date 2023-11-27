@@ -2,26 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    font-family: 'integral_cfbold';
+    src: url('../public/fonts/integralcf-demibold-webfont.woff') format('woff2');
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+    font-family: 'integral_cfmed';
+    src: url('../public/fonts/integralcf-regular-webfont.woff') format('woff2');
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.thick-txt {
+    font-family: 'integral_cfbold';
+}
+.thick-txt1 {
+    font-family: 'integral_cfmed';
+}
+.button-border {
+    border-radius: 8px;
+    border: 1px solid #EB3A45;
+    background: rgba(255, 255, 255, 0.05);
+}
+.btn-text-grd {
+    background: linear-gradient(90deg, #ABABAB 0%, #2D2D2D 102.73%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.scroll-btn {
+    background: radial-gradient(circle, #EB3A4A, #5C5C5A);
+    -webkit-background-clip: text;
+    color: transparent;
 }
