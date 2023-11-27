@@ -57,7 +57,7 @@ const Hero = () => {
         </div>
     </div>
     <motion.div
-      whileInView={{ y: 0, opacity: 1, transition: { delay: 1.5, duration: 0.8 } }}
+      whileInView={{ y: 0, opacity: 1, transition: { delay: 0.8, duration: 0.8 } }}
       whileHover={{ scale: 1 }}
       initial={{ y: 100, opacity: 0 }}
       className='flex flex-col justify-center items-center mt-[60px]'
