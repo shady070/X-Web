@@ -56,15 +56,17 @@ const Hero = () => {
           </div>
         </div>
     </div>
-    <motion.div
-      whileInView={{ y: 0, opacity: 1, transition: { delay: 1.5, duration: 0.8 } }}
-      whileHover={{ scale: 1 }}
-      initial={{ y: 100, opacity: 0 }}
-      className='flex flex-col justify-center items-center mt-[60px]'
-    >
-      <p className='scroll-btn text-xs font-light'>Scroll down</p>
-      <img src='/arrow.svg' height={7} width={15} />
-    </motion.div>
+      <motion.div
+        whileInView={[
+          { y: 0, opacity: 1, transition: { delay: 1.5, duration: 0.8 } },
+          { scale: 1 },
+        ]}
+        initial={{ y: 100, opacity: 0 }}
+        className='flex flex-col justify-center items-center mt-[60px]'
+      >
+        <p className='scroll-btn text-xs font-light'>Scroll down</p>
+        <img src='/arrow.svg' height={7} width={15} />
+      </motion.div>
     </div>
   )
 }
